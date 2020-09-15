@@ -4,6 +4,8 @@ android中改变view的位置可以通过实时改变view的坐标位置实现,�
 
 [demo.apk](https://github.com/truemi/Sphere-collision/blob/master/MyApplication/app/demo.apk) 
 
-详细文档请转至简书查看:[简书Sphere-collision](https://www.jianshu.com/p/5a98d10eb572) 
-
+详细文档请转至简书查看:
+  [简书Sphere-collision](https://www.jianshu.com/p/5a98d10eb572) 
+  [box2d 圆形边界的创建](https://www.jianshu.com/p/1522d97c5b39)
 ![dmeo](https://i.imgur.com/TCoMHT5.gif)
+![image.png](https://upload-images.jianshu.io/upload_images/4593470-ef373a0e822af55d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
