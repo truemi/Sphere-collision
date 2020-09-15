@@ -7,7 +7,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.administrator.myapplication.widget.PoolBallView;
 
@@ -34,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 int y = (int) (event.values[1] * 2.0f);
                 if (lastX != x || lastY != y) {//防止频繁回调,画面抖动
                     poolBall.getBallView().rockBallByImpulse(-x, y);
+                    Log.e("陀螺仪 ", x + "<----陀螺仪Y: " + y + "<-----");
                 }
-                Log.e("陀螺仪 ", x + "<----陀螺仪Y: " + y + "<-----");
+
                 lastX = x;
                 lastY = y;
             }

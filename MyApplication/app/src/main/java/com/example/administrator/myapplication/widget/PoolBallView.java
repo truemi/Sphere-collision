@@ -2,15 +2,18 @@ package com.example.administrator.myapplication.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * Created by Administrator on 2018-05-17.
  */
 
 public class PoolBallView extends FrameLayout {
-
+    public Context mcontext;
     private BallView ballView;
 
     public PoolBallView(Context context) {
@@ -24,7 +27,10 @@ public class PoolBallView extends FrameLayout {
     public PoolBallView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setWillNotDraw(false);//重写ondraw需要
+        this.mcontext = context;
         ballView = new BallView(context, this);
+
+
     }
 
     @Override
